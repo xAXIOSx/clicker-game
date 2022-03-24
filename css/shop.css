@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* a {
+  text-decoration: none;
+}
+@font-face {
+  font-family: "pixel";
+  src: url("../fonts/PressStart2P-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+body {
+  background-color: rgb(56, 56, 56);
+  padding-top: 20px;
+  height: 100vh;
+}
+.back {
+    color: white;
+    font-size: 30px;
+    font-family: 'pixel';
+    padding: 20px;
+    -webkit-user-select: none;
+    cursor: pointer;
+}
+.shop-card {
+    margin: 40px;
+    /* width: 30%; */
+    min-height: 50vh;
+    border-radius: 10px;
+    border: 2px solid rgb(109, 109, 109);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.product {
+    width: 75%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+.product img{
+    width: 75%;
+    height: 150px;
+    object-fit: contain;
+}
+.price {
+    margin: 10px;
+    font-size: 20px;
+    font-family: 'pixel';
+    color: white;
+}
+.buy-button {
+    width: 50%;
+    height: 45px;
+    background-color: #6ca003;
+    color: white;
+    font-size: 30px;
+    font-family: 'pixel';
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-user-select: none;
+    cursor: pointer;
+}
+.buy-button.no {
+    background-color: tomato;
+}
+.buy-button.yes {
+    background-color: #034ca0;
+}
+.name {
+    color: white;
+    font-size: 20px;
+    font-family: 'pixel';
+    margin: 20px;
+}
+.products {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.balance {
+    width: 300px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    font-family: 'pixel';
+    border: 2px solid white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    bottom: 10px;
+    right: 10px;
+}
+.coin {
+    margin: 0 10px;
+    width: 25px;
+    height: 25px;
+  }
+.product .cross {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    position: absolute;
+}
